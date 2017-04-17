@@ -22,7 +22,8 @@ class GlobalSettings(object):
 
 
 class UserProfileAdmin(object):
-    pass
+    list_display = ['username', 'email', 'address']
+    search_fields = ['username', 'email', 'address']
 
 class EmailVerifyRecordAdmin(object):
 
